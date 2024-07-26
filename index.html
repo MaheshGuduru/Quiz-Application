@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="timer">TIME LEFT: <span id="time-left">60</span> seconds</div>
+            <div class="score">SCORE: <span id="score">0</span></div>
+        </div>
+        <div class="quiz-body">
+            <div class="question-container">
+                <h2 id="question">What is the capital of France?</h2>
+                <ul id="options" class="options">
+                    <li><button class="option" onclick="selectOption(this)">Paris</button></li>
+                    <li><button class="option" onclick="selectOption(this)">London</button></li>
+                    <li><button class="option" onclick="selectOption(this)">Berlin</button></li>
+                    <li><button class="option" onclick="selectOption(this)">Rome</button></li>
+                </ul>
+            </div>
+            <button id="submit-btn" onclick="submitAnswer()">SUBMIT</button>
+        </div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
